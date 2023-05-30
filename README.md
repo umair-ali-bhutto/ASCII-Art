@@ -1,6 +1,6 @@
 # ASCII Animation in Command Prompt
 
-This is a JavaScript program that displays an ASCII animation in the command prompt. It uses the `ansi-escapes` library to control the cursor and clear the screen.
+This is a JavaScript program that displays an ASCII animation in the command prompt. It uses the `ansi-escapes` library to control the cursor, `chalk` library to control rgb() colors.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ In the terminal or command prompt, navigate to the project directory.
    ```shell
    npm install ansi-escapes
 
-5. Then Intall Library for custom rgb colors called chalk escapes
+5. Then Intall Library for custom rgb colors called chalk
    ```shell
    npm install chalk
 
@@ -37,6 +37,8 @@ Customization
 To modify the ASCII frames of the animation, you can update the frames array in the ascii-art.mjs file.
 
 You can adjust the animation speed by changing the delay value in milliseconds.
+
+You can change the color of rgb(red,green,blue).
 
 License
 This code is released under the MIT License.
