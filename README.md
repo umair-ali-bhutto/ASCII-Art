@@ -19,9 +19,17 @@ This is a JavaScript program that displays an ASCII animation in the command pro
 Usage
 In the terminal or command prompt, navigate to the project directory.
 
-Run the following command to start the ASCII animation:
+4. Then Intall Library for ANSI escapes
+   ```shell
+   npm install ansi-escapes
 
-node (ascii-art.mjs)
+5. Then Intall Library for custom rgb colors called chalk escapes
+   ```shell
+   npm install chalk
+
+6. Run the following command to start the ASCII animation:
+```shell
+   node ascii-art.mjs
 
 The ASCII animation will be displayed in the command prompt.
 
