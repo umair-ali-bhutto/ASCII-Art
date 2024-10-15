@@ -1,8 +1,8 @@
 {
   "name": "ASCII-Art",
-  "version": "1.0.0",
-  "description": "This is a JavaScript program that displays an ASCII animation in the command prompt. It uses the `ansi-escapes` library to control the cursor, `chalk` library to control rgb() colors.",
-  "main": "index.js",
+  "version": "2.0",
+  "description": "This is simple Node.js application that allows users to select a color for ASCII art animation. This project demonstrates the use of libraries such as `chalk` for color styling, `inquirer` for user prompts, and `ansi-escapes` for screen control.",
+  "main": "ascii/ascii-art.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/umair-ali-bhutto/ASCII-Art.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Umair Ali Bhutto",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/umair-ali-bhutto/ASCII-Art/issues"
   },
