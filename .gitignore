@@ -1,1 +1,2 @@
-node_modules
+# Ignore only the root node_modules
+/ascii/node_modules/
