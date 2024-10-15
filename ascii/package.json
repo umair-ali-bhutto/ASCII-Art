@@ -1,6 +1,6 @@
 {
   "name": "ASCII-Art",
-  "version": "2.0",
+  "version": "1.0.0",
   "description": "This is simple Node.js application that allows users to select a color for ASCII art animation. This project demonstrates the use of libraries such as `chalk` for color styling, `inquirer` for user prompts, and `ansi-escapes` for screen control.",
   "main": "ascii/ascii-art.mjs",
   "scripts": {
