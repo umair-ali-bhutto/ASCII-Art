@@ -13,6 +13,8 @@
 - Added Node Files For Both Linux And Windows To Make It Independent Of Node Version Installed Or Not Installed On User-End
 - Made `batch file .bat` And `scripting language command file .sh` Scripts So It Can Run Standalone In Windows And Linux
 
+##### V 2.1 - (2024-10-16)
+- Removed Local Node And Made It Downloadable On First Run  
 
 
 

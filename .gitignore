@@ -1,2 +1,5 @@
 # Ignore only the root node_modules
 /ascii/node_modules/
+
+node-v14.20.0-linux-x64
+node-v14.20.0-win-x64

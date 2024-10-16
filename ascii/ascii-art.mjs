@@ -1,7 +1,7 @@
 /**
  * @author umair-ali-bhutto
  * @since 2023-05-3
- * @version 2.0
+ * @version 2.1
  */
 import ansiEscapes from 'ansi-escapes';
 import chalk from 'chalk';

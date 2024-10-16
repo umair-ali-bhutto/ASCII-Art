@@ -1,13 +1,32 @@
 #!/bin/bash
 
+# Set the URL for the Node.js binary and local path
+NODE_URL="https://nodejs.org/download/release/v14.20.0/node-v14.20.0-linux-x64.tar.gz"
+NODE_DIR="./node-v14.20.0-linux-x64"
+NODE_TAR="node-v14.20.0-linux-x64.tar.gz"
+NODE_EXE="$NODE_DIR/bin/node"
+NPM_EXE="$NODE_DIR/bin/npm"
+
 # Change to the ASCII directory
 cd ascii
 
-# Check if node_modules exists
+# Download Node.js if not already available
+if [ ! -f "$NODE_EXE" ]; then
+    echo "Downloading Node.js..."
+    wget "$NODE_URL" -O "$NODE_TAR"
+
+    # Extract Node.js
+    tar -xzf "$NODE_TAR"
+    rm "$NODE_TAR"  # Remove the tar file after extraction
+fi
+
+
+
+# Check if node_modules exists and install dependencies if not
 if [ ! -d "node_modules" ]; then
-    echo "Installing dependencies............"
-    # Redirect standard error to a log file
-    ./node-v14.20.0-linux-x64/bin/npm install > /dev/null 2>npm-error.log
+    echo "Installing dependencies..."
+    chmod +x $NODE_EXE
+    $NPM_EXE install > /dev/null 2>npm-error.log
 
     # Check if npm install was successful
     if [ $? -eq 0 ]; then
@@ -20,4 +39,4 @@ if [ ! -d "node_modules" ]; then
 fi
 
 # Run your ascii-art.mjs script
-./node-v14.20.0-linux-x64/bin/node ascii-art.mjs
+$NODE_EXE ascii-art.mjs
