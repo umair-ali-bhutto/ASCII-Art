@@ -1,7 +1,7 @@
 /**
  * @author umair-ali-bhutto
  * @since 2023-05-3
- * @version 2.1
+ * @version 2.2
  */
 import ansiEscapes from 'ansi-escapes';
 import chalk from 'chalk';
@@ -411,7 +411,7 @@ async function displayAnimation(frames) {
 inquirer
   .prompt([
     {
-      type: 'rawlist',
+      type: 'list',
       name: 'color',
       message: 'Pick a color for the animation:',
       choices: colorOptions.map(opt => opt.name)
@@ -433,6 +433,6 @@ inquirer
 
 // Handle Ctrl + C (SIGINT)
 process.on('SIGINT', () => {
-  console.log("Process terminated.");
+  console.log("\nProcess terminated.");
   process.exit();
 });

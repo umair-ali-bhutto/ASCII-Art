@@ -9,6 +9,13 @@ NPM_EXE="$NODE_DIR/bin/npm"
 
 # Change to the ASCII directory
 cd ascii
+echo "Dont Worry This Is Not A Virus"
+
+echo "Created By: "
+echo " +-+ +-+ +-+ +-+ +-+  +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+"
+echo " |U| |M| |A| |I| |R|  |A| |L| |I|   |B| |H| |U| |T| |T| |O|"
+echo " +-+ +-+ +-+ +-+ +-+  +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+"
+
 
 # Download Node.js if not already available
 if [ ! -f "$NODE_EXE" ]; then
@@ -26,7 +33,7 @@ fi
 if [ ! -d "node_modules" ]; then
     echo "Installing dependencies..."
     chmod +x $NODE_EXE
-    $NPM_EXE install > /dev/null 2>npm-error.log
+    $NODE_EXE $NPM_EXE install > /dev/null 2>npm-error.log
 
     # Check if npm install was successful
     if [ $? -eq 0 ]; then

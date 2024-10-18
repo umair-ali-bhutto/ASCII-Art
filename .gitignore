@@ -1,5 +1,9 @@
 # Ignore only the root node_modules
 /ascii/node_modules/
 
+
+# Ignore Node
 node-v14.20.0-linux-x64
 node-v14.20.0-win-x64
+node-v14.20.0-linux-x64.tar.gz
+node-v14.20.0-win-x64.zip

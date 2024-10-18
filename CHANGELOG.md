@@ -16,5 +16,6 @@
 ##### V 2.1 - (2024-10-16)
 - Removed Local Node And Made It Downloadable On First Run  
 
-
-
+##### V 2.2 - (2024-10-16)
+- Fixed Linux Bash Issue Node Was Not Running Due To Path Error
+- Need To Fix Windows Batch File
