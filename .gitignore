@@ -1,6 +1,7 @@
 # Ignore only the root node_modules
 /ascii/node_modules/
 
+*.log
 
 # Ignore Node
 node-v14.20.0-linux-x64
